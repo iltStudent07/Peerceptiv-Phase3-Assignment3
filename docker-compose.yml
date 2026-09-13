@@ -15,7 +15,7 @@ services:
     ports:
       - "4000:4000"
     environment:
-      - MONGODB_URI=mongodb://mongo:27017/compose-demo
+      - MONGODB_URI=mongodb://mongo:27017/peerceptiv
       - NODE_ENV=production
     depends_on:
       mongo:
@@ -26,7 +26,8 @@ services:
     ports:
       - "3000:80"
     depends_on:
-      - api
+      api:
+        condition: service_healthy
 
 volumes:
   mongo-data:
