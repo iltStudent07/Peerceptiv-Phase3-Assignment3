@@ -29,7 +29,7 @@ export default function App() {
     setTasks(await res.json());
   }
 
-  async function addTask(e: React.FormEvent<HTMLFormElement>) {
+  async function addTask(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!title.trim()) return;
     await fetch(`${API}/tasks`, {
