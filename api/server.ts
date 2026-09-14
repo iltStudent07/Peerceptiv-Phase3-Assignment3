@@ -72,5 +72,5 @@ app.delete("/api/tasks/:id", async (req: Request, res: Response) => {
 
 const PORT = Number(process.env.PORT) || 4000;
 connectWithRetry().then(() => {
-  app.listen(PORT, "0.0.0.0", () => console.log(`API on port ${PORT}`));
+  app.listen(PORT, () => console.log(`API on port ${PORT}`));
 });

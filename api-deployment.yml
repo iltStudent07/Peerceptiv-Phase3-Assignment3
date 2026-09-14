@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: api
-          image: your-dockerhub-username/express-api:latest
-          imagePullPolicy: IfNotPresent
+          image: express-api:local
+          imagePullPolicy: Never
           ports:
             - containerPort: 4000
           env:
