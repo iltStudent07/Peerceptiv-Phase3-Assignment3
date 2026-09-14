@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB connection with retry
-const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/compose-demo";
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/peerceptiv";
 
 async function connectWithRetry(): Promise<void> {
   const maxRetries = 10;

@@ -1,6 +1,8 @@
 # Peerceptiv-Phase3-Assignment3
 
-## Reviewer Setup (Docker Compose)
+The purpose of this repo is to demonstrate competence with Docker containerization, AWS cloud services, and Kubernetes orchestration.
+
+## Setup (Docker Compose)
 
 ### Prerequisites
 
@@ -10,7 +12,7 @@
 ### 1) Clone and open the project
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/iltStudent07/Peerceptiv-Phase3-Assignment3.git
 cd Peerceptiv-Phase3-Assignment3
 ```
 
@@ -104,3 +106,6 @@ Access the API (works on any Kind setup):
 kubectl port-forward service/express-api-svc 8080:80
 curl http://localhost:8080/health
 ```
+
+## Repo Author
+iltStudent07
